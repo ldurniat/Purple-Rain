@@ -61,9 +61,8 @@ end
 ------------------------------------------------------------------------------------------------
 function M.new()
 
-	-- Get the current scene
-	local scene  = composer.getScene( composer.getSceneName( 'current' ) )
-	local parent = scene.view
+	-- Get the current scene group
+	local parent = display.currentStage
 
 	-- Basic properties
 	local x      = mRandom( _L, _R )
